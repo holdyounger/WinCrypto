@@ -32,3 +32,5 @@
 *.app
 ﻿**/Debug/**
 **/Release/**
+**/Debug/**
+**/Release/**
