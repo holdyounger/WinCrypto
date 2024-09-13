@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="apr_sha1\apr_sha1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="apr_sha1\apr_sha1_test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="decryptaes\DecryptAES.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="decryptaes256\DecryptAES256.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="md4\md4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="md4\NTLMHash.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="md4\kuhl_m_lsadump.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="md4\kull_m_registry.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="md4\modules\kull_m_crypto.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="md4\modules\kull_m_handle.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="md4\modules\kull_m_md4.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="md4\modules\kull_m_memory.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="md4\modules\kull_m_ntdll_export.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="md4\modules\kull_m_output.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="md4\modules\kull_m_patch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="md4\modules\kull_m_process.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="md4\modules\kull_m_string.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="md4\modules\rpc\kull_m_rpc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="md4\modules\rpc\kull_m_rpc_ms-credentialkeys.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sha256\sha256.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sha256\sha256.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sha2_512\sha2_512.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="apr_sha1\apr_sha1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="decryptaes\base64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="md4\globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="md4\kuhl_m_lsadump.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="md4\kull_m_registry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="md4\kull_m_registry_structures.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="md4\kull_m_samlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="md4\md4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="md4\modules\kull_m_crypto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="md4\modules\kull_m_crypto_system.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="md4\modules\kull_m_handle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="md4\modules\kull_m_md4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="md4\modules\kull_m_memory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="md4\modules\kull_m_ntdll_export.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="md4\modules\kull_m_output.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="md4\modules\kull_m_patch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="md4\modules\kull_m_process.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="md4\modules\kull_m_string.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="md4\modules\rpc\kull_m_rpc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="md4\modules\rpc\kull_m_rpc_ms-credentialkeys.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sha256\sha256.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

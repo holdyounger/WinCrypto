@@ -20,37 +20,30 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{E5F48045-F6FA-4FB2-BDD8-9BB8D8550B8A}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{862821a1-c15d-4ac1-a98c-fe4259b2d5f3}</ProjectGuid>
-    <RootNamespace>DecryptAES256</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Builder_Crypto</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -70,64 +63,108 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
-    </ClCompile>
-    <Link>
-      <SubSystem>Console</SubSystem>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-    </Link>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
+      <WarningLevel>Level3</WarningLevel>
     </ClCompile>
     <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="DecryptAES256.cpp" />
+    <ClCompile Include="apr_sha1\apr_sha1.cpp" />
+    <ClCompile Include="apr_sha1\apr_sha1_test.cpp" />
+    <ClCompile Include="decryptaes256\DecryptAES256.cpp" />
+    <ClCompile Include="decryptaes\DecryptAES.cpp" />
+    <ClCompile Include="md4\kuhl_m_lsadump.c" />
+    <ClCompile Include="md4\kull_m_registry.c" />
+    <ClCompile Include="md4\md4.cpp" />
+    <ClCompile Include="md4\modules\kull_m_crypto.c" />
+    <ClCompile Include="md4\modules\kull_m_handle.c" />
+    <ClCompile Include="md4\modules\kull_m_md4.c" />
+    <ClCompile Include="md4\modules\kull_m_memory.c" />
+    <ClCompile Include="md4\modules\kull_m_ntdll_export.c" />
+    <ClCompile Include="md4\modules\kull_m_output.c" />
+    <ClCompile Include="md4\modules\kull_m_patch.c" />
+    <ClCompile Include="md4\modules\kull_m_process.c" />
+    <ClCompile Include="md4\modules\kull_m_string.c" />
+    <ClCompile Include="md4\modules\rpc\kull_m_rpc.c" />
+    <ClCompile Include="md4\modules\rpc\kull_m_rpc_ms-credentialkeys.c" />
+    <ClCompile Include="md4\NTLMHash.cpp" />
+    <ClCompile Include="sha256\sha256.c" />
+    <ClCompile Include="sha256\sha256.cpp" />
+    <ClCompile Include="sha2_512\sha2_512.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="apr_sha1\apr_sha1.h" />
+    <ClInclude Include="decryptaes\base64.h" />
+    <ClInclude Include="md4\globals.h" />
+    <ClInclude Include="md4\kuhl_m_lsadump.h" />
+    <ClInclude Include="md4\kull_m_registry.h" />
+    <ClInclude Include="md4\kull_m_registry_structures.h" />
+    <ClInclude Include="md4\kull_m_samlib.h" />
+    <ClInclude Include="md4\md4.h" />
+    <ClInclude Include="md4\modules\kull_m_crypto.h" />
+    <ClInclude Include="md4\modules\kull_m_crypto_system.h" />
+    <ClInclude Include="md4\modules\kull_m_handle.h" />
+    <ClInclude Include="md4\modules\kull_m_md4.h" />
+    <ClInclude Include="md4\modules\kull_m_memory.h" />
+    <ClInclude Include="md4\modules\kull_m_ntdll_export.h" />
+    <ClInclude Include="md4\modules\kull_m_output.h" />
+    <ClInclude Include="md4\modules\kull_m_patch.h" />
+    <ClInclude Include="md4\modules\kull_m_process.h" />
+    <ClInclude Include="md4\modules\kull_m_string.h" />
+    <ClInclude Include="md4\modules\rpc\kull_m_rpc.h" />
+    <ClInclude Include="md4\modules\rpc\kull_m_rpc_ms-credentialkeys.h" />
+    <ClInclude Include="sha256\sha256.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

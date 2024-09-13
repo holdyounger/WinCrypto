@@ -753,8 +753,6 @@ static void PBKDF2_DCC2(const unsigned char* pass, const unsigned char* salt, in
     }
 }
 
-
-
 // MD4 compression function
 void md4_crypt(unsigned int* buffer, unsigned int* hash)
 {

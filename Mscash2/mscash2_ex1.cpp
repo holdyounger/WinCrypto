@@ -108,7 +108,8 @@ char* to_hex(unsigned char* digest) {  // convert 16 byte digest to 32 byte hex
  */
 int dcc2_tst(int argc, char** argv)
 {
-	char* username = (char*)"shimingming", * password = (char*)"Admin@123";
+	// char* username = (char*)"shimingming", * password = (char*)"Admin@123";
+	char* username = (char*)"administrator", * password = (char*)"Admin@2022";
 	unsigned char username_lc[22], salt[44], pass_unicode[128 + 2], md4hash[16], digest[20];
 	unsigned salt_len, pass_len;
 	MD4_CTX ctx;
