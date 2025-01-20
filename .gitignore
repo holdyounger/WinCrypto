@@ -34,3 +34,5 @@
 **/Release/**
 **/Debug/**
 **/Release/**
+.vs
+*.user
