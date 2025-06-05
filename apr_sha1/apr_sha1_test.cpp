@@ -112,6 +112,5 @@ int main()
         cout << endl;
         std::cout << "input pwd>";
         std::cin >> pwd;
-
     }
 }
